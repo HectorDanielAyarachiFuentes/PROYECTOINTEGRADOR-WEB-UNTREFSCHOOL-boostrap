@@ -111,3 +111,14 @@ header {
         max-width: 100%;
     }
 }
+/* Estilos para crear margen entre el título y la imagen */
+.p-2 h3 {
+    margin-top: 10px; /* Ajusta el valor según el margen deseado */
+}
+/* Estilos para crear margen entre la imagen y el texto */
+.p-2 img {
+    margin-bottom: 10px; /* Ajusta el valor según el margen deseado entre la imagen y el texto */
+}
+.p-2 p {
+    margin-top: 10px; /* Ajusta el valor según el margen deseado entre el texto y la imagen */
+}
