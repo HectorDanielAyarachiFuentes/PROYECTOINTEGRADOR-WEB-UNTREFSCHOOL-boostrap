@@ -3,13 +3,11 @@ header {
     padding: 20px 0;
     background-color: #00425a;
 }
-
 /* Modificar caracteristicas del footer */
 .footer {
     background-color: #fc7300;
     color: rgb(11, 9, 9);
 }
-
 /* Modifica Y hace responsive la imagen del mapa de google maps */
 .p-23 {
     padding: 2px;
@@ -20,7 +18,6 @@ header {
     /* Proporción para que el iframe tenga una relación de aspecto 16:9 (320/70) */
     overflow: hidden;
 }
-
 .p-23 iframe {
     position: absolute;
     top: 0;
@@ -28,11 +25,7 @@ header {
     width: 100%;
     height: 100%;
     border: 0;
-
 }
-
-
-
 /* Estilos para el contenido dentro del div con clase "p-2" en la sección de "Contacto" */
 #contacto .p-2,
 #contacto2 .p-2,
@@ -45,15 +38,12 @@ header {
     background-color: #f9f9f9;
     /* Agrega un color de fondo para visualizar el área del div */
 }
-
 /* Estilos para el contenido del texto dentro del div con clase "contacto" en la sección de "Contacto" */
 #contacto .p-2 .contacto,
 #contacto2 .p-2 .contacto,
 #contacto3 .p-2 .contacto {
     text-align: center;
 }
-
-
 /* Estilos para el contenedor de las redes sociales */
 #redes-sociales .p-2 {
     display: flex;
@@ -62,23 +52,17 @@ header {
     align-items: center;
     /* Centrar horizontalmente los elementos */
 }
-
 /* Estilos para los enlaces de las redes sociales dentro del contenedor */
 #redes-sociales .p-2 a {
     margin-bottom: 10px;
     /* Espacio entre los enlaces (ajusta según necesites) */
 }
-
 /* Estilos para los íconos de las redes sociales */
 #redes-sociales .p-2 i {
     font-size: 1rem;
     /* Ajusta el tamaño de los íconos (opcional) */
 }
-
-
-
 ---
-
 /* Estilos generales para el formulario */
 .contact-form {
     max-width: 400px;
@@ -87,14 +71,12 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 /* Estilos para las etiquetas del formulario */
 .contact-form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
-
 /* Estilos para los campos de entrada de texto */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
@@ -105,7 +87,6 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 /* Estilos para el botón de enviar */
 .contact-form button[type="submit"] {
     background-color: #4caf50;
@@ -115,22 +96,18 @@ header {
     border-radius: 4px;
     cursor: pointer;
 }
-
 /* Cambiar color del botón al pasar el cursor */
 .contact-form button[type="submit"]:hover {
     background-color: #45a049;
 }
-
 /* Estilos para el área de mensaje */
 .contact-form textarea {
     resize: vertical;
     height: 150px;
 }
-
 /* Estilos para el formulario en dispositivos más pequeños */
 @media screen and (max-width: 600px) {
     .contact-form {
         max-width: 100%;
     }
 }
-

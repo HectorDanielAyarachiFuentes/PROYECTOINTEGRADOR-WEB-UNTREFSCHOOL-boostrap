@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,16 +18,13 @@
             ;
             text-align: center;
         }
-
         /* Estilos para el diseño Flexbox */
         .d-flex {
             display: flex;
         }
-
         .justify-content-center {
             justify-content: center;
         }
-
         /* Estilos para los elementos del footer */
         .p-2 {
             padding: 5px;
@@ -36,37 +32,30 @@
             margin: 5px;
             flex: 1;
         }
-
         @media (max-width: 576px) {
-
             /* Estilos adicionales para pantallas más pequeñas (hasta 576px) */
             .d-flex {
                 flex-direction: column;
             }
-
             .p-2 {
                 margin: 5px 0;
             }
         }
-
         /* Estilos para el botón "Mostrar Formulario" */
         #btn-mostrar-formulario {
             margin-top: 20px;
         }
-
         /* Estilos para las imágenes */
         .img-fluid {
             max-width: 100%;
             height: auto;
         }
-
         /* Estilos para ocultar la sección de formulario */
         #formulario-section {
             display: none;
         }
     </style>
 </head>
-
 <body>
     <!-- Barra de navegación -->
     <header id="header">
@@ -374,7 +363,6 @@
             var btnMostrarFormulario = document.getElementById("btn-mostrar-formulario");
             var formularioSection = document.getElementById("formulario-section");
             var secciones = document.querySelectorAll("section[id]:not(#formulario-section)");
-
             // Agrega un evento click al botón "Mostrar Formulario"
             btnMostrarFormulario.addEventListener("click", function () {
                 // Muestra la sección del formulario y oculta el resto de secciones
@@ -382,11 +370,9 @@
                 secciones.forEach(function (seccion) {
                     seccion.style.display = "none";
                 });
-
                 // Desplazarse automáticamente hacia la sección del formulario
                 formularioSection.scrollIntoView({ behavior: "smooth" });
             });
-
             // Agregar evento submit al formulario para redirigir al inicio y hacer scroll hacia arriba
             var formulario = document.getElementById("formulario");
             formulario.addEventListener("submit", function (event) {
@@ -396,13 +382,10 @@
                     seccion.style.display = "block"; // Mostrar todas las secciones
                 });
                 window.scrollTo(0, 0); // Volver al inicio de la página
-
                 // Desplazarse automáticamente hacia la sección del formulario
                 formularioSection.scrollIntoView({ behavior: "smooth" });
             });
         });
     </script>
-
 </body>
-
 </html>
