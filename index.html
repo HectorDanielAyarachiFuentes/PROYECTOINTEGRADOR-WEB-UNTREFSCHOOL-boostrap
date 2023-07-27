@@ -359,33 +359,32 @@
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Obtiene el botón "Mostrar Formulario" y la sección del formulario
-            var btnMostrarFormulario = document.getElementById("btn-mostrar-formulario");
-            var formularioSection = document.getElementById("formulario-section");
-            var secciones = document.querySelectorAll("section[id]:not(#formulario-section)");
-            // Agrega un evento click al botón "Mostrar Formulario"
-            btnMostrarFormulario.addEventListener("click", function () {
-                // Muestra la sección del formulario y oculta el resto de secciones
-                formularioSection.style.display = "block";
-                secciones.forEach(function (seccion) {
-                    seccion.style.display = "none";
-                });
-                // Desplazarse automáticamente hacia la sección del formulario
-                formularioSection.scrollIntoView({ behavior: "smooth" });
+          // Obtiene el botón "Mostrar Formulario" y la sección del formulario
+          var btnMostrarFormulario = document.getElementById("btn-mostrar-formulario");
+          var formularioSection = document.getElementById("formulario-section");
+          var secciones = document.querySelectorAll("section[id]:not(#formulario-section)");
+          // Agrega un evento click al botón "Mostrar Formulario"
+          btnMostrarFormulario.addEventListener("click", function () {
+            // Muestra la sección del formulario y oculta el resto de secciones
+            formularioSection.style.display = "block";
+            secciones.forEach(function (seccion) {
+              seccion.style.display = "none";
             });
-            // Agregar evento submit al formulario para redirigir al inicio y hacer scroll hacia arriba
-            var formulario = document.getElementById("formulario");
-            formulario.addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevenir el envío del formulario por defecto
-                formularioSection.style.display = "none"; // Ocultar el formulario
-                secciones.forEach(function (seccion) {
-                    seccion.style.display = "block"; // Mostrar todas las secciones
-                });
-                window.scrollTo(0, 0); // Volver al inicio de la página
-                // Desplazarse automáticamente hacia la sección del formulario
-                formularioSection.scrollIntoView({ behavior: "smooth" });
+            // Desplazarse automáticamente hacia la sección del formulario
+            formularioSection.scrollIntoView({ behavior: "smooth" });
+          });
+          // Agregar evento submit al formulario
+          var formulario = document.getElementById("formulario");
+          formulario.addEventListener("submit", function (event) {
+            // No es necesario prevenir el envío del formulario aquí, ya que queremos que se envíe directamente.
+            // Ocultar el formulario después de enviarlo y volver al inicio de la página
+            formularioSection.style.display = "none"; // Ocultar el formulario
+            secciones.forEach(function (seccion) {
+              seccion.style.display = "block"; // Mostrar todas las secciones
             });
+            window.scrollTo(0, 0); // Volver al inicio de la página
+          });
         });
-    </script>
+      </script>
 </body>
 </html>
